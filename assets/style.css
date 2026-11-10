@@ -264,3 +264,55 @@ summary { cursor: pointer; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition: none !important; }
 }
+
+/* Recall stays above every source; the complete history is the final section. */
+.recall-work, .comparison-work, .handoff-work { margin-top: 24px; }
+.recall-work label, .history-compare label, .comparison-work label, .handoff-work label { display: block; color: var(--text); font-weight: 600; font-size: 15px; margin: 22px 0 8px; }
+.recall-work textarea, .recall-work select, .comparison-work textarea, .comparison-work select, .history-compare select, .handoff-work textarea { display: block; width: 100%; min-width: 0; max-width: 100%; padding: 13px 14px; color: var(--text); background: #0b1321; border: 1px solid #455672; border-radius: 10px; font: inherit; font-size: 16px; line-height: 1.7; }
+.recall-work textarea, .comparison-work textarea, .handoff-work textarea { resize: vertical; min-height: 90px; }
+.recall-work select, .comparison-work select, .history-compare select { min-height: 48px; }
+.recall-work textarea[readonly] { background: #111827; color: var(--muted); border-style: dashed; }
+.recall-work select:disabled { color: var(--muted); opacity: 1; }
+.practice-button { min-height: 48px; margin-top: 18px; padding: 10px 16px; color: var(--cyan); background: #142632; border: 1px solid #526e84; border-radius: 10px; font: inherit; font-size: 15px; font-weight: 600; }
+.practice-button:hover { background: #1b3341; }
+.practice-button:disabled { cursor: default; color: var(--muted); background: #121b2a; }
+.recall-work .quiet-note, .handoff-work .quiet-note { margin-top: 14px; }
+.history-book { margin-top: 32px; border-color: #3e6672; }
+.history-notice { color: var(--muted); font-size: 15px; margin: 4px 0 22px; }
+.recall-comparison { margin-bottom: 24px; padding: 18px; border: 1px solid #39576b; border-radius: 12px; background: #101d2b; }
+.recall-comparison h3 { font-size: 18px; }
+.recall-state { font-size: 13px; color: var(--muted); margin: 10px 0; }
+.recall-quote { white-space: pre-wrap; overflow-wrap: anywhere; color: var(--cyan); font-size: 16px; }
+.recall-comparison .quiet-note { margin-top: 12px; }
+.history-list { list-style: none; margin: 0; padding: 0; }
+.history-entry { padding: 24px 0; border-top: 1px solid var(--line); }
+.history-meta { display: flex; flex-wrap: wrap; gap: 7px 13px; margin-bottom: 10px; color: var(--faint); font-size: 12px; }
+.history-meta span:first-child { color: var(--cyan); font-weight: 600; }
+.history-entry h3 { font-size: 20px; margin-bottom: 12px; }
+.history-body { font-size: 17px; white-space: pre-wrap; }
+.history-source-label { font-size: 13px; color: var(--muted); margin-top: 13px; }
+.history-source { margin-top: 7px; color: var(--faint); font-size: 12px; }
+.history-source summary { cursor: pointer; padding: 8px 0; }
+.history-hash { white-space: pre-wrap; overflow-wrap: anywhere; font-family: ui-monospace, monospace; line-height: 1.8; font-size: 11px; padding-block: 6px; }
+.history-compare { margin-top: 16px; padding: 14px; border-left: 2px solid #5b8d92; background: #101b2a; }
+.history-compare label { margin-top: 0; }
+.history-gaps { padding: 20px; margin-bottom: 24px; background: #181d2c; border-radius: 12px; }
+.history-gaps h3 { font-size: 17px; margin-bottom: 12px; }
+.history-gaps ul { list-style: disc; padding-left: 20px; color: var(--muted); font-size: 15px; }
+.history-gaps li + li { margin-top: 7px; }
+.comparison-work, .handoff-work { border-top: 1px solid var(--line); padding-top: 26px; }
+.comparison-work h3, .handoff-work h3 { font-size: 22px; margin-bottom: 12px; }
+.comparison-work > p, .handoff-work > p { font-size: 15px; color: var(--muted); }
+.comparison-work .action-suggestion { white-space: pre-wrap; margin-top: 20px; padding: 18px; border-radius: 12px; color: var(--cyan); background: #10252b; }
+.handoff-work { padding-bottom: 12px; }
+.handoff-work textarea { font-size: 14px; min-height: 280px; }
+@media (max-width: 600px) {
+  .history-entry h3 { font-size: 19px; }
+  .history-body { font-size: 16px; }
+  .history-meta { font-size: 11px; }
+  .recall-comparison, .history-gaps { padding: 15px; }
+  .recall-work textarea, .recall-work select, .comparison-work textarea, .comparison-work select, .history-compare select { padding: 11px; }
+  .history-compare { padding: 12px; }
+  .comparison-work h3, .handoff-work h3 { font-size: 20px; }
+  .practice-button { width: 100%; }
+}
