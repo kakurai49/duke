@@ -1,0 +1,64 @@
+{
+  "generator": "projects/pages-release/tools/export_duke_validator.py",
+  "inputs": [
+    {
+      "blob_sha": "23c7da8cfe4e73c14e337ac8e6d405fccf4ea420",
+      "commit": "47419e615aada02963da17bd97f422da7ab216d8",
+      "definitions": [
+        "CSP",
+        "ID",
+        "MAX_FILE",
+        "MAX_TOTAL",
+        "PageFacts",
+        "README",
+        "ReleaseError",
+        "SHA",
+        "SOURCE_REPOSITORY",
+        "_keys",
+        "_local_target",
+        "_pairs",
+        "_string",
+        "canonical",
+        "load_json",
+        "require",
+        "validate_site",
+        "validate_snapshot"
+      ],
+      "path": "projects/agent2/tools/learning_dashboard_release.py",
+      "repository": "kakurai49/sandbox",
+      "sha256": "5e254c3d3ad76a89317a32fccd182d402d00212039dd13de2f08475f7c526fa9"
+    },
+    {
+      "blob_sha": "c86c0564de7ac30dc7e97e0ba0a41ac7a6dbbe2b",
+      "commit": "47419e615aada02963da17bd97f422da7ab216d8",
+      "definitions": [
+        "DATE_KINDS",
+        "HASH",
+        "IDENTIFIER",
+        "SCHEMA",
+        "STAGES",
+        "STATUSES",
+        "canonical",
+        "check_date",
+        "digest",
+        "require",
+        "text",
+        "validate_history"
+      ],
+      "path": "projects/agent2/src/agent_designer/learning_dashboard_history.py",
+      "repository": "kakurai49/sandbox",
+      "sha256": "243121bc00e6c63edb1ba857db0607e40bc60a6515d4c2df48cb97b3f7a102af"
+    }
+  ],
+  "outputs": {
+    "duke_history.py": {
+      "bytes": 3737,
+      "sha256": "19917bdaba59f729fb6677dd8cc3a44356848ed74242336f2d8f0595755a6ea9"
+    },
+    "duke_validator.py": {
+      "bytes": 14445,
+      "sha256": "a0ea55ccd02a14d2cf09a04ae0498259828deea587c199594cb3631c63de5369"
+    }
+  },
+  "schema": "duke-validator-source/v1"
+}

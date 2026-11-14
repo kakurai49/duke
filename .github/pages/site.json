@@ -1,0 +1,41 @@
+{
+  "adapter": ".github/pages/site_adapter.py",
+  "base_url": "https://kakurai49.github.io/duke/",
+  "build_materials": [
+    ".github/pages-core/pages_core.py",
+    ".github/pages-core/requirements.lock",
+    ".github/pages-core/schema/bom-1.6.schema.json",
+    ".github/pages-core/schema/jsf-0.82.schema.json",
+    ".github/pages-core/schema/source.json",
+    ".github/pages-core/schema/spdx.schema.json",
+    ".github/pages-core/security.py",
+    ".github/pages-core/vendor-manifest.json",
+    ".github/pages/duke_history.py",
+    ".github/pages/duke_validator.py",
+    ".github/pages/source-manifest.json",
+    ".github/workflows/pages.yml"
+  ],
+  "repository": "kakurai49/duke",
+  "required_files": [
+    ".nojekyll",
+    "README.md",
+    "index.html",
+    "assets/app.js",
+    "assets/style.css",
+    "data/dashboard.json"
+  ],
+  "runtime_components": [
+    {
+      "name": "duke-dashboard-ui",
+      "path": "assets/app.js",
+      "version": "sha256:f6029252d77f43e7b1d946867ddd22f58bf2ba1f3d7d6700dee2749f7caf5faf"
+    },
+    {
+      "name": "duke-dashboard-style",
+      "path": "assets/style.css",
+      "version": "sha256:bdde1ef2f52c79a61ddfc4e551f5fb2bb4ffc87059829cb00bd7c391eb39982f"
+    }
+  ],
+  "schema": "pages-profile/v1",
+  "site": "duke"
+}
